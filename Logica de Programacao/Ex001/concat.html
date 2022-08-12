@@ -8,9 +8,22 @@
 </head>
 <body>
 <script>
-    document.write("Flávio nasceu em " + (2016 - 39 + "<br>"));
-    document.write("Joaquim nasceu em " + (2016 - 20 + "<br>"));
-    document.write("Barney nasceu em " + (2016 - 40 + "<br>"));
+    const ano = Number(prompt("Qual e o ano que voce esta?"))
+
+    document.write("Flávio tem " + (`${ano}` - 1997) + " anos" + "<br>");
+    document.write("Joaquim tem " + (`${ano}`- 1996) + " anos" + "<br>");
+    document.write("Barney tem " + (`${ano}`- 1976) + " anos" + "<br>");
+
+    const idadeFlavio = ano - 1997;
+    const idadeJoaquim = ano -1996;
+    const idadeBarney = ano - 1976;
+    const media = (idadeFlavio + idadeJoaquim + idadeBarney)/3;
+    
+    document.write("A media das idade é " + Math.round(media));
+
+    const nome = "Flavio"
+
+    document.write(`<br>A idade de ${nome} e ${idadeFlavio}`)
 </script>
 </body>
 </html>
